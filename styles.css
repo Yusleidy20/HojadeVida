@@ -1,0 +1,259 @@
+/* Estilos para el encabezado */
+@font-face {
+    font-family: fuente_1;
+    src: url(Tipografia/Baby.otf);
+}
+
+/* Estilos generales para el encabezado */
+header {
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo negro con transparencia */
+    color: #ff279e;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 0;
+    padding: 10px;
+    position: relative;
+}
+
+/* Estilos para la barra de navegación en el encabezado */
+header .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 10px;
+    font-size: 15px;
+}
+
+/* Estilos para el título */
+h1 {
+    margin-right: 60%;
+    margin-block-start: 0.3em;
+    margin-block-end: 0.83em;
+    display: block;
+    font-weight: bold;
+    font-family: fuente_1, sans-serif;
+    font-size: 1.5rem;
+    letter-spacing: 3px;
+}
+
+/* Estilos para la imagen móvil */
+#movable-image {
+    position: absolute;
+    transition: transform 0.2s ease-in-out;
+}
+
+/* Estilos para la lista desplegable */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Estilos para el botón de la lista desplegable */
+.dropbtn {
+    background-color: rgba(255, 255, 255, 0); /* Fondo blanco con transparencia */
+    color: #ff279e;
+    padding: 10px 50px;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.dropbtn:hover{
+    background-color: #fcfcfc;
+}
+
+
+/* Estilos para el contenido de la lista desplegable */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 100px;
+    z-index: 1;
+}
+
+/* Estilos para los elementos de la lista desplegable */
+.dropdown-content a {
+    color: black;
+    padding: 12px 14px;
+    text-decoration: none;
+    display: block;
+    min-width: 100px;
+}
+
+/* Estilos para los elementos de la lista desplegable al pasar el ratón sobre ellos */
+.dropdown-content a:hover {
+    background-color: #ff279e;
+}
+
+/* Mostrar la lista desplegable al pasar el ratón sobre el botón */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Estilos para el logotipo */
+.logo img {
+    width: 60px;
+    height: 60px;
+    vertical-align: middle;
+}
+
+/* Estilos para los íconos de redes sociales */
+.social-icons a img {
+    width: 50px;
+    height: 50px;
+    vertical-align: middle;
+}
+
+/* Estilos para los íconos de redes sociales al pasar el ratón sobre ellos */
+.social-icons a {
+    display: inline-block;
+    margin-right: 20px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.social-icons a:hover {
+    transform: translateY(-10px);
+}
+
+/* Estilos para la imagen principal */
+#mi-imagen {
+    border-radius: 50%;
+    margin-right: 30px;
+    width: 380px;
+    height: 380px;
+    box-shadow: 0px 0px 30px #3a3a3a;
+    transition: transform 0.3s;
+}
+
+/* Estilos para la imagen principal al pasar el ratón sobre ella */
+#mi-imagen:hover {
+    transform: scale(1.1);
+}
+
+/* Estilos generales para el cuerpo de la página */
+body {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background: black; /* Fondo negro */
+    background-size: cover;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    margin: 0;
+    font-size: 16px;
+}
+
+/* Estilos para el título secundario */
+h2 {
+    font-size: 45px;
+    font-family: fuente_1, sans-serif;
+    color: #ff279e;
+}
+
+/* Estilos para el artículo y el contenido principal */
+article {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en dispositivos pequeños */
+    justify-content: flex-start;
+}
+
+/* Estilos para el texto a la derecha de la imagen */
+.derecha {
+    font-size: 16px;
+    max-width: 40%; /* Ancho máximo para dispositivos pequeños */
+    font-style: italic;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: justify;
+    text-align: left;
+    flex: 1; /* Ocupa todo el ancho en dispositivos pequeños */
+    color: #ff279e;
+    margin-left: 0; /* No hay margen izquierdo en dispositivos pequeños */
+    margin-top: 20px; /* Agregado para espaciado entre imagen y texto en dispositivos pequeños */
+    overflow-wrap: break-word;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    /* Alineación central en dispositivos pequeños */
+}
+
+/* Estilos para el contenedor de video WebM */
+.webm-container {
+    position: absolute;
+    top: 80px;
+    right: 0;
+    bottom: 0;
+    width: 200px;
+    height: auto;
+    margin: 0;
+    
+}
+
+#mi-video {
+    width: 100%;
+    height: 94%;
+    object-fit: cover; /* Para mantener la relación de aspecto y cubrir completamente el contenedor */
+}
+
+/* Estilos para el pie de página */
+footer {
+    text-align: center;
+    padding: 20px;
+    color: rgb(255, 255, 255);
+}
+
+/* Estilos para los enlaces en el pie de página */
+footer a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+/* Estilos para el icono en el pie de página */
+.icono {
+    width: 20px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+/* Consulta de medios para dispositivos más pequeños */
+@media only screen and (max-width: 768px) {
+    header .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h1 {
+        margin-right: 0;
+    }
+
+    .webm-container {
+        display: none; /* Ocultar el video en dispositivos más pequeños */
+    }
+
+    article {
+        flex-direction: column; /* Cambiar la dirección del flex a columna en dispositivos más pequeños */
+    }
+
+    .derecha {
+        flex-direction: column;
+        max-width: 100%; /* Ancho máximo para dispositivos más pequeños */
+    }
+}
+
+/* Consulta de medios para dispositivos más grandes */
+@media only screen and (min-width: 1200px) {
+    header .navbar {
+        padding: 10px 100px; /* Ajustar el espaciado en dispositivos más grandes */
+    }
+
+    #mi-imagen {
+        width: 450px;
+        height: 450px;
+    }
+}
